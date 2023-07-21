@@ -4,327 +4,154 @@
 =====================================*/
 
 @font-face {
-    font-family: 'ubuntu';
-    src: url('../font/Ubuntu/Ubuntu-Medium.ttf');
+  font-family: "ubuntu";
+  src: url("../font/Ubuntu/Ubuntu-Light.ttf");
 }
 
 * {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 10px;
-    font-family: ubuntu;
+  font-size: 10px;
+  font-family: ubuntu;
 }
 
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈Header≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
+/* --- Header --- */
 
-header {
-    margin-bottom: 3vh;
+.header-section {
+  margin-block: 8vh;
+  display: flex;
+  justify-content: center;
 }
 
-header .logo {
-    text-align: center;
-    display: block;
-    margin: 5vh auto;
+.nav-container nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25%;
 }
 
-header div {
-    text-align: center;
-    margin-bottom: 4vh;
+.nav-container nav a {
+  color: #dfaa5b;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 900;
 }
 
-header div nav a {
-    color: #DFAA5B;
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding: 0 10px;
+/* --- Hero-Section --- */
+
+.hero-section {
+  background-image: url("../img/hero_image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: 18rem;
+  margin-top: 10vh;
 }
 
-header div nav .find {
-    width: 3%;
+.hero-title {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 3%;
 }
 
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈HEROOOOOOOOOOOOOOOO≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
-
-.hero {
-    background-image: url('../img/hero_image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: cover;
-    width: 100%;
-    height: 70vh;
-    margin: 10vh auto;
-    color: #fff;
-    text-align: center;
+.hero-title h1 {
+  font-size: 5.5rem;
 }
 
-.hero div h1 {
-    font-size: 4.5rem;
-    padding-top: 32vh;
-    margin: 4vh auto 10px auto;
-
+.hero-title h3 {
+  font-size: 2.2rem;
+  margin-bottom: 50px;
 }
 
-.hero div h3 {
-    font-size: 1.4rem;
-    margin-bottom: 5vh;
+.hero-title .button {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #dfaa5b;
+  font-size: 1.2rem;
+  padding: 1.5rem 8rem;
+  border-radius: 10px;
+  font-weight: bolder;
 }
 
-.hero div a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 50px;
-    background-color: #DFAA5B;
-    border-radius: 10px;
-}
-
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈FACILITIES≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
+/* --- Facilites --- */
 
 .facilities h2 {
-    color: #DFAA5B;
-    font-size: 3rem;
-    text-align: center;
-    padding-bottom: 5vh;
+  color: #dfaa5b;
+  text-align: center;
+  font-size: 2.2rem;
+  padding-block: 3vh;
 }
 
-.facilities .icons {
-    display: flex;
-    justify-content: space-evenly;
+.icon-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
 }
 
-.facilities div p {
-    color: #DFAA5B;
-    text-align: center;
+.icons {
+  display: inline-block;
+  color: #dfaa5b;
 }
 
-
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ROOMS≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
-
-.rooms {
-    padding-top: 10vh;
-    color: #DFAA5B;
-    padding-bottom: 10vh;
+.icons img {
+  width: 40px;
+  padding: 0 2px;
 }
+
+.icons p {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+/* --- Rooms --- */
+
 .rooms h2 {
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 5vh;
+  margin-top: 15vh;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #dfaa5b;
 }
 
-.rooms .gallery {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.rooms .gallery div {
-    width: 45%;
-    height: 100%;
-    text-align: center;
-    border-radius: 4px;
+.gallery .room-div {
+  background: no-repeat center/contain;
+  margin: 10px;
+  border-radius: 10px;
+  padding-block: 10vh;
+  color: #ffffff;
+  width: 100%;
 }
 
-.rooms .gallery .twin {
-    background-image: url('../img/standard_twin_room.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
+
+
+.gallery .room-div a {
+  color: #f90000;
+  text-decoration: none;
+  text-align: center;
 }
 
-.rooms .gallery .standard {
-    background-image: url('../img/standard_room.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
+.gallery .room-div:nth-child(1) {
+  background-image: url("../img/standard_twin_room.png");
 }
 
-.rooms .gallery .view {
-    background-image: url('../img/standard_view_room.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
+.gallery .room-div:nth-child(2) {
+  background-image: url("../img/standard_room.png");
 }
 
-.rooms .gallery .deluxe {
-    background-image: url('../img/deluxe_room.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 30vh;
+.gallery .room-div:nth-child(3) {
+  background-image: url("../img/standard_view_room.png");
 }
 
-.rooms .gallery div h4 {
-    font-size: 2rem;
-    margin: 18vh auto 3vh auto;
-    color: #fff;
-}
-
-.rooms div a {
-    background-color: #DFAA5B;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.6rem;
-    padding:10px 20px;
-    border-radius: 4px;
-}
-
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈Already≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
-
-.already{
-    height: 20vh;
-    text-align: center;
-}
-
-.already h3{
-    
-    font-size: 2.5rem;
-    margin-top: 15vh;
-    margin-bottom: 4vh;
-}
-
-.already a{
-    background-color: #DFAA5B;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.6rem;
-    margin-top: 10vh;
-    padding:10px 60px;
-    border-radius: 4px;
-}
-
-/*≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈Footer≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
-
-footer {
-    background-color: #111111;
-    color:#fff;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.2rem;
-    padding: 10px 10px 50px 20px;
-}
-
-.left {
-    width: 30%
-    
-}
-
-.left img {
-    margin: 20px 0;
-    width: 50%;
-}
-
-.mid {
-    margin-top: 30px;
-    width: 35%
-    font-size: 1.6rem;
-}
-
-.mid ul li {
-    list-style: none;
-    padding-bottom: 10px;
-}
-
-.right {
-    margin-top: 18px;
-    display: block;
-    width: 35%;
-}
-
-.right form label {
-    margin-top: 10px;
-    font-size: 1.8rem;
-    display: inline-block;
-}
-
-.right form input[type="email"] {
-    width: 80%;
-    margin-top: 10px;
-    font-size: 1.2rem ;
-    padding: 10px 10px;
-    border-radius: 4px;
-    border-style: none;
-}
-
-.right form input[type="email"]:focus {
-    outline: none;
-}
-
-.right form input[type="submit"] {
-    display: inline-block;
-    width: 80%;
-    margin-top: 10px;
-    color: #fff;
-    background-color: #DFAA5B;
-    padding: 10px 30px;
-    border-radius: 4px;
-    border-style: none;
-}
-
-/*≈≈≈≈≈≈≈≈≈MEDIA QUERY für 600px≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈*/
-
-@media only screen and (max-width: 601px){
-    
-    html{
-        font-size: 16px;
-    }
-
-    header div nav a {
-        display:block;
-        margin: 5vh 20px;
-    }
-
-    .hero div h1{
-        padding-top: 20vh;
-    }
-    
-    .rooms .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .rooms .gallery div {
-        width: 80%;
-        
-    }
-
-
-    footer{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .left{
-        width: 80%;
-        text-align: center;
-    }
-
-    .mid {
-        text-align: center;
-        width: 100%;
-        font-size: 2rem;
-        margin: 40px 0;
-    }
-
-    .right{
-        text-align: center;
-        width: 100%;
-    }
-    
-    .right form input[type="submit"] {
-        margin-top: 20px;
-        padding: 20px 0;
-    }
-
-    
-
-
-
+.gallery .room-div:nth-child(4) {
+  background-image: url("../img/deluxe_room.png");
 }
