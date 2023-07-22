@@ -229,4 +229,51 @@ img {
 
 footer {
   background-color: #111111;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-inline: 3%;
+  padding-bottom: 10vh;
+}
+
+footer :is(.left, .mid, .right) {
+  padding-top: 30px;
+}
+
+.left img {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.left p {
+  font-family: "ubuntu-light";
+}
+
+.mid ul {
+  list-style: none;
+}
+
+.mid ul li {
+  margin-bottom: 10px;
+}
+
+.mid ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.right input[type="email"] {
+  margin-block: 10px;
+  display: block;
+  padding: 0.75rem 6rem 0.75rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.right button {
+  background-color: #dfaa5b;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 10rem 0.75rem 1rem;
 }
