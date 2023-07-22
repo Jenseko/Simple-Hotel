@@ -4,20 +4,59 @@
 =====================================*/
 
 @font-face {
-  font-family: "ubuntu";
+  font-family: "ubuntu-light";
   src: url("../font/Ubuntu/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "ubuntu-medium";
+  src: url("../font/Ubuntu/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "ubuntu-regular";
+  src: url("../font/Ubuntu/Ubuntu-Regular.ttf");
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font: inherit;
 }
 
 html {
   font-size: 10px;
   font-family: ubuntu;
 }
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+
 
 /* --- Header --- */
 
@@ -131,8 +170,6 @@ html {
   color: #ffffff;
   width: 100%;
 }
-
-
 
 .gallery .room-div a {
   color: #f90000;
