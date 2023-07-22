@@ -1,6 +1,7 @@
 /*=====================================
             Generals
         colors: #DFAA5B
+        secondary: #957554
 =====================================*/
 
 @font-face {
@@ -18,7 +19,6 @@
   src: url("../font/Ubuntu/Ubuntu-Regular.ttf");
 }
 
-
 *,
 *::before,
 *::after {
@@ -32,8 +32,8 @@
 }
 
 html {
-  font-size: 10px;
-  font-family: ubuntu;
+  font-size: 1rem;
+  font-family: ubuntu-regular;
 }
 
 html:focus-within {
@@ -54,10 +54,6 @@ img {
   display: block;
 }
 
-
-
-
-
 /* --- Header --- */
 
 .header-section {
@@ -69,13 +65,13 @@ img {
 .nav-container nav {
   display: flex;
   justify-content: space-between;
-  padding: 0 25%;
+  padding: 0 15%;
 }
 
 .nav-container nav a {
-  color: #dfaa5b;
+  color: #957554;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -86,7 +82,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-block: 18rem;
+  padding-block: 12rem;
   margin-top: 10vh;
 }
 
@@ -97,11 +93,11 @@ img {
 }
 
 .hero-title h1 {
-  font-size: 5.5rem;
+  font-size: 4rem;
 }
 
 .hero-title h3 {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
 }
 
@@ -119,9 +115,9 @@ img {
 /* --- Facilites --- */
 
 .facilities h2 {
-  color: #dfaa5b;
+  color: #957554;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   padding-block: 3vh;
 }
 
@@ -152,28 +148,43 @@ img {
 .rooms h2 {
   margin-top: 15vh;
   text-align: center;
-  font-size: 2.2rem;
-  color: #dfaa5b;
+  font-size: 1.8rem;
+  color: #957554;
 }
 
 .gallery {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .gallery .room-div {
-  background: no-repeat center/contain;
+  background: no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
   margin: 10px;
   border-radius: 10px;
-  padding-block: 10vh;
+  padding-block: 20vh;
   color: #ffffff;
-  width: 100%;
+  width: 45%;
+}
+
+.gallery .room-div h4 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .gallery .room-div a {
-  color: #f90000;
+  color: #ffffff;
+  background-color: #dfaa5b;
+  padding: 1.2rem 3rem;
+  border-radius: 10px;
   text-decoration: none;
+  display: inline-block;
+  margin-inline: 7rem;
   text-align: center;
 }
 
@@ -191,4 +202,31 @@ img {
 
 .gallery .room-div:nth-child(4) {
   background-image: url("../img/deluxe_room.png");
+}
+
+/* --- Room already --- */
+
+.already {
+  margin-top: 5vh;
+  text-align: center;
+}
+
+.already h3 {
+  color: #957554;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.already a {
+  text-decoration: none;
+  background-color: #dfaa5b;
+  color: #ffffff;
+  padding: 1rem 5.5rem;
+  border-radius: 10px;
+  margin-bottom: 70px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #111111;
 }
