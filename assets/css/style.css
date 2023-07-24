@@ -75,6 +75,10 @@ img {
   font-weight: 900;
 }
 
+.nav-container nav a:hover {
+  color: #dfaa5b;
+}
+
 /* --- Hero-Section --- */
 
 .hero-section {
@@ -110,6 +114,10 @@ img {
   padding: 1.5rem 8rem;
   border-radius: 10px;
   font-weight: bolder;
+}
+
+.hero-title .button:hover {
+  background-color: #957554;
 }
 
 /* --- Facilites --- */
@@ -188,6 +196,11 @@ img {
   text-align: center;
 }
 
+.gallery .room-div a:hover {
+  background-color: #957554;
+  scale: 120%;
+}
+
 .gallery .room-div:nth-child(1) {
   background-image: url("../img/standard_twin_room.png");
 }
@@ -227,6 +240,10 @@ img {
   display: inline-block;
 }
 
+.already a:hover {
+  background-color: #957554;
+}
+
 footer {
   background-color: #111111;
   color: #ffffff;
@@ -262,6 +279,10 @@ footer :is(.left, .mid, .right) {
   color: #ffffff;
 }
 
+.mid ul li a:hover {
+  color: #dfaa5b;
+}
+
 .right input[type="email"] {
   margin-block: 10px;
   display: block;
@@ -276,4 +297,8 @@ footer :is(.left, .mid, .right) {
   border: none;
   border-radius: 5px;
   padding: 0.75rem 10rem 0.75rem 1rem;
+}
+
+.right button:hover {
+  background-color: #957554;
 }
