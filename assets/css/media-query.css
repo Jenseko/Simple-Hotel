@@ -1,2 +1,149 @@
 @media (min-width: 37.5em) {
+  html {
+    font-size: 0.5rem;
+  }
+
+  .header-section {
+    margin-block: 4vh;
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+  }
+
+  .nav-container nav {
+    padding-inline: 10%;
+    align-items: center;
+  }
+
+  .nav-container nav a {
+    font-size: 2rem;
+  }
+
+  .hero-section {
+    padding-block: 6rem;
+    margin-top: 5vh;
+  }
+
+  .hero-title {
+    padding-top: 1rem;
+  }
+
+  .hero-title h1 {
+    font-size: 5.5rem;
+  }
+
+  .hero-title h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+  .hero-title .button {
+    font-size: 1.8rem;
+    padding: 1.5rem 8rem;
+  }
+  .facilities h2 {
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding-block: 3vh;
+  }
+  .icon-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding-inline: 10%;
+  }
+
+  .icons img {
+    width: 70%;
+    padding-inline: 1rem;
+    margin-inline: auto;
+  }
+
+  .icons p {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10px;
+  }
+
+  .rooms h2 {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #957554;
+  }
+  .gallery {
+    display: block;
+  }
+  .gallery .room-div {
+    background: no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    border-radius: 10px;
+    padding-block: 20vh;
+    color: #ffffff;
+    width: 95%;
+  }
+
+  .gallery .room-div h4 {
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 5rem;
+  }
+
+  .gallery .room-div a {
+    margin-inline: 35%;
+    font-size: 2rem;
+  }
+
+  .already h3 {
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .already a {
+    padding: 1rem 5.5rem;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+  footer {
+    display: block;
+  }
+  footer .left {
+    text-align: center;
+  }
+  footer .left img {
+    display: inline-block;
+    width: 35%;
+  }
+  .left :is(h4, p) {
+    font-size: 2.1rem;
+  }
+
+  .mid ul li {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .mid ul li a {
+    font-size: 2rem;
+  }
+
+  .right input {
+    display: inline-block;
+    width: 30%;
+    margin-inline: auto;
+    font-size: 2rem;
+  }
+  .right p {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .right button {
+    margin-inline: auto;
+    display: block;
+  }
+  .right button {
+    padding: 0.75rem 3.55rem;
+    font-size: 2rem;
+  }
 }

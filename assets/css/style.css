@@ -43,6 +43,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -142,7 +143,6 @@ img {
 
 .icons img {
   width: 40px;
-  padding: 0 2px;
 }
 
 .icons p {
