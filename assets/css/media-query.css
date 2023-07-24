@@ -1,6 +1,10 @@
-@media (min-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
   html {
     font-size: 0.5rem;
+  }
+
+  .top-hotel-logo {
+    width: 35%;
   }
 
   .header-section {
@@ -29,7 +33,7 @@
   }
 
   .hero-title h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 
   .hero-title h3 {
@@ -42,7 +46,7 @@
   }
   .facilities h2 {
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding-block: 3vh;
   }
   .icon-section {
@@ -66,21 +70,16 @@
 
   .rooms h2 {
     margin-top: 5rem;
-    text-align: center;
     font-size: 3rem;
-    color: #957554;
   }
   .gallery {
     display: block;
   }
   .gallery .room-div {
-    background: no-repeat center/cover;
     display: flex;
     flex-direction: column;
     margin-inline: auto;
-    border-radius: 10px;
     padding-block: 20vh;
-    color: #ffffff;
     width: 95%;
   }
 
@@ -128,22 +127,22 @@
     font-size: 2rem;
   }
 
-  .right input {
-    display: inline-block;
-    width: 30%;
+  .right input[type="email"] {
+    display: block;
+    width: min-content;
     margin-inline: auto;
     font-size: 2rem;
+    padding: 0.75em 1.5em;
   }
   .right p {
     text-align: center;
     font-size: 2rem;
   }
+
   .right button {
     margin-inline: auto;
     display: block;
-  }
-  .right button {
-    padding: 0.75rem 3.55rem;
+    padding: 0.75em 3.5em;
     font-size: 2rem;
   }
 }
